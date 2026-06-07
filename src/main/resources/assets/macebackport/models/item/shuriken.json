@@ -1,0 +1,7 @@
+{
+  "parent": "macebackport:item/parent_shuriken",
+  "textures": {
+    "1": "macebackport:item/shuriken",
+    "particle": "macebackport:item/shuriken"
+  }
+}

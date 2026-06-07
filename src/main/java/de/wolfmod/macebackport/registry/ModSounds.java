@@ -15,15 +15,6 @@ public final class ModSounds {
     public static final RegistryObject<SoundEvent> MACE_SMASH_AIR = register("mace_smash_air");
     public static final RegistryObject<SoundEvent> WIND_CHARGE_THROW = register("wind_charge_throw");
     public static final RegistryObject<SoundEvent> WIND_CHARGE_BURST = register("wind_charge_burst");
-    public static final RegistryObject<SoundEvent> SPEAR_LUNGE_1 = register("spear_lunge_1");
-    public static final RegistryObject<SoundEvent> SPEAR_LUNGE_2 = register("spear_lunge_2");
-    public static final RegistryObject<SoundEvent> SPEAR_LUNGE_3 = register("spear_lunge_3");
-    public static final RegistryObject<SoundEvent> SPEAR_ATTACK = register("spear_attack");
-    public static final RegistryObject<SoundEvent> SPEAR_HIT = register("spear_hit");
-    public static final RegistryObject<SoundEvent> SPEAR_USE = register("spear_use");
-    public static final RegistryObject<SoundEvent> WOODEN_SPEAR_ATTACK = register("wooden_spear_attack");
-    public static final RegistryObject<SoundEvent> WOODEN_SPEAR_HIT = register("wooden_spear_hit");
-    public static final RegistryObject<SoundEvent> WOODEN_SPEAR_USE = register("wooden_spear_use");
 
     private ModSounds() {
     }

@@ -18,10 +18,5 @@ public final class ModNetworking {
     }
 
     public static void register() {
-        int id = 0;
-        CHANNEL.registerMessage(id++, EmptySpearLungePacket.class,
-                EmptySpearLungePacket::encode,
-                EmptySpearLungePacket::decode,
-                EmptySpearLungePacket::handle);
     }
 }

@@ -20,6 +20,7 @@ import net.minecraft.world.item.enchantment.EnchantmentHelper;
 import net.minecraft.world.phys.AABB;
 import net.minecraft.world.phys.Vec3;
 import net.minecraftforge.event.entity.player.AttackEntityEvent;
+import net.minecraftforge.event.entity.player.PlayerInteractEvent;
 import net.minecraftforge.event.entity.living.LivingHurtEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 
@@ -30,13 +31,23 @@ import java.util.concurrent.ConcurrentHashMap;
 public final class CombatEvents {
     private static final float SMASH_ATTACK_FALL_THRESHOLD = 1.5F;
     private static final float SMASH_ATTACK_HEAVY_THRESHOLD = 5.0F;
-    private static final double SMASH_ATTACK_KNOCKBACK_RADIUS = 3.5D;
+    private static final double SMASH_ATTACK_KNOCKBACK_RADIUS = 2.5D;
     private static final double WIND_BURST_RADIUS = 3.5D;
 
     private static final Map<UUID, Float> RECENT_ATTACK_FALL = new ConcurrentHashMap<>();
     private static final Map<UUID, Long> RECENT_ATTACK_TIME = new ConcurrentHashMap<>();
 
     private CombatEvents() {
+    }
+
+    @SubscribeEvent
+    public static void onLeftClickBlock(PlayerInteractEvent.LeftClickBlock event) {
+        Player player = event.getEntity();
+        if (!player.isCreative() || !player.getMainHandItem().is(ModItems.MACE.get())) {
+            return;
+        }
+
+        event.setCanceled(true);
     }
 
     @SubscribeEvent
@@ -119,9 +130,7 @@ public final class CombatEvents {
     }
 
     private static float computeRawSmashDistance(Player attacker) {
-        float fallDistance = attacker.fallDistance;
-        float velocityEquivalent = (float) Math.max(0.0D, -attacker.getDeltaMovement().y * 12.0D);
-        return Math.max(fallDistance, velocityEquivalent);
+        return Math.max(0.0F, attacker.fallDistance);
     }
 
     // Matches vanilla MaceItem#getAttackDamageBonus piecewise curve.
