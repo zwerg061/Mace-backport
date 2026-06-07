@@ -1,0 +1,26 @@
+# Gradle
+.gradle/
+build/
+out/
+
+# IDE
+.idea/
+*.iml
+.vscode/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Runtime / logs
+run/
+logs/
+crash-reports/
+*.log
+
+# Java
+hs_err_pid*
+replay_pid*
+
+# Local env
+.env

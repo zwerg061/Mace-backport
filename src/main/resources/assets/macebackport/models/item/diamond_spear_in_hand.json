@@ -1,0 +1,6 @@
+﻿{
+    "textures":  {
+                     "layer0":  "macebackport:item/diamond_spear_in_hand"
+                 },
+    "parent":  "macebackport:item/spear_in_hand"
+}

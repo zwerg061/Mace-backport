@@ -1,0 +1,28 @@
+modLoader="javafml"
+loaderVersion="[43,)"
+license="MIT"
+
+[[mods]]
+modId="macebackport"
+version="${file.jarVersion}"
+displayTest="IGNORE_SERVER_VERSION"
+displayName="Mace Backport"
+authors="wolfmod"
+description='''
+Backports mace combat features inspired by newer Minecraft versions to Forge 1.19.2.
+Includes Mace, Wind Charge, and mace-specific enchantments.
+'''
+
+[[dependencies.macebackport]]
+modId="forge"
+mandatory=true
+versionRange="[43,)"
+ordering="NONE"
+side="BOTH"
+
+[[dependencies.macebackport]]
+modId="minecraft"
+mandatory=true
+versionRange="[1.19.2,1.20)"
+ordering="NONE"
+side="BOTH"

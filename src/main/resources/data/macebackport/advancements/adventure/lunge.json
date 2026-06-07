@@ -1,0 +1,45 @@
+{
+  "parent": "minecraft:adventure/kill_a_mob",
+  "criteria": {
+    "lunge": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "player": {
+          "equipment": {
+            "mainhand": {
+              "tag": "macebackport:spears",
+              "enchantments": [
+                {
+                  "enchantment": "macebackport:lunge",
+                  "levels": {
+                    "min": 1
+                  }
+                }
+              ]
+            }
+          }
+        }
+      }
+    }
+  },
+  "display": {
+    "icon": {
+      "item": "macebackport:iron_spear"
+    },
+    "title": {
+      "translate": "advancements.adventure.lunge.title"
+    },
+    "description": {
+      "translate": "advancements.adventure.lunge.description"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "requirements": [
+    [
+      "lunge"
+    ]
+  ]
+}

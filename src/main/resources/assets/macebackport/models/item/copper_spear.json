@@ -1,0 +1,14 @@
+﻿{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "macebackport:item/copper_spear"
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "macebackport:held_spear": 1.0
+      },
+      "model": "macebackport:item/copper_spear_in_hand"
+    }
+  ]
+}

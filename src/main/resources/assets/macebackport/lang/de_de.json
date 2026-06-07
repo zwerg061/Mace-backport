@@ -1,0 +1,18 @@
+{
+  "item.macebackport.mace": "Streitkolben",
+  "item.macebackport.wind_charge": "Windladung",
+  "item.macebackport.wooden_spear": "Holzspeer",
+  "item.macebackport.stone_spear": "Steinspeer",
+  "item.macebackport.copper_spear": "Kupferspeer",
+  "item.macebackport.iron_spear": "Eisenspeer",
+  "item.macebackport.golden_spear": "Goldspeer",
+  "item.macebackport.diamond_spear": "Diamantspeer",
+  "item.macebackport.netherite_spear": "Netherritspeer",
+  "enchantment.macebackport.density": "Dichte",
+  "enchantment.macebackport.breach": "Durchbruch",
+  "enchantment.macebackport.wind_burst": "Windstoss",
+  "enchantment.macebackport.lunge": "Stoss",
+  "advancements.adventure.lunge.title": "Stoss",
+  "advancements.adventure.lunge.description": "Triff mit einem Speer mit Stoss-Verzauberung",
+  "itemGroup.macebackport": "Mace Backport"
+}

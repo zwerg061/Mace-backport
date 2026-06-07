@@ -1,0 +1,19 @@
+{
+  "item.macebackport.mace": "Mace",
+  "item.macebackport.wind_charge": "Wind Charge",
+  "item.macebackport.wooden_spear": "Wooden Spear",
+  "item.macebackport.stone_spear": "Stone Spear",
+  "item.macebackport.copper_spear": "Copper Spear",
+  "item.macebackport.iron_spear": "Iron Spear",
+  "item.macebackport.golden_spear": "Golden Spear",
+  "item.macebackport.diamond_spear": "Diamond Spear",
+  "item.macebackport.netherite_spear": "Netherite Spear",
+  "enchantment.macebackport.density": "Density",
+  "enchantment.macebackport.breach": "Breach",
+  "enchantment.macebackport.wind_burst": "Wind Burst",
+  "enchantment.macebackport.lunge": "Lunge",
+  "advancements.adventure.lunge.title": "Lunge",
+  "advancements.adventure.lunge.description": "Hit with a spear enchanted with Lunge",
+  "itemGroup.tabCombat": "Combat",
+  "itemGroup.macebackport": "Mace Backport"
+}
